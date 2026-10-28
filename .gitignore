@@ -1,0 +1,15 @@
+# Local tooling and reports
+.claude/
+.gstack/
+.img2threejs/
+
+# 3D model experiments (separate work, not part of the site)
+3d/
+
+# Build outputs and large source media
+La-Baita-website.zip
+assets/video/hero-platter.mp4
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

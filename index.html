@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Baita Lounge · Nyama Choma, Cocktails, Live Games &amp; Theme Nights in Upper Hill, Nairobi</title>
+<meta name="description" content="La Baita Lounge on Upper Hill Road, Nairobi. Nyama choma from our own butchery, a full bar with an in-house mixologist, every big game on the big screen, theme nights, car wash, catering and delivery.">
+<meta name="theme-color" content="#0f0f0f">
+<meta property="og:title" content="La Baita Lounge · Upper Hill, Nairobi">
+<meta property="og:description" content="Nyama choma, cocktails, live games and theme nights on Upper Hill Road.">
+<meta property="og:image" content="assets/img/brand/logo-square.jpg">
+<link rel="icon" href="assets/img/brand/logo-gold-sm.webp" type="image/webp">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/big-shoulders-display-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/outfit-latin.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/photos/hero-platter-poster.webp" fetchpriority="high">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css?v=20">
+<script src="assets/js/config.js?v=20"></script>
+<!-- QA ISSUE-005: apply the header design before first paint so the hero doesn't shift when main.js loads -->
+<script>(function(){var m=location.search.match(/[?&]nav=([a-d])\b/),s=(m&&m[1])||(window.LA_BAITA||{}).navStyle;if(s)document.documentElement.setAttribute('data-nav',s);})();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/main.js?v=20" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Floating header -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo" aria-label="La Baita Lounge home">
+    <img class="logo-gold" src="assets/img/brand/logo-gold-sm.webp" alt="La Baita Lounge" width="140" height="160">
+    <img class="logo-dark" src="assets/img/brand/logo-black.webp" alt="" width="420" height="480" aria-hidden="true">
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#choma">Choma</a>
+    <a href="#menu">Menu</a>
+    <a href="#games">Live Games</a>
+    <a href="#bar">Bar</a>
+    <a href="#events">Events</a>
+    <a href="#services">Services</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="btn btn-line btn-sm" data-cta="order" href="#">Order</a>
+    <a class="btn btn-gold btn-sm" data-cta="book" href="#">Book a Table</a>
+  </div>
+  <a class="nav-book" data-cta="book" href="#">Book a Table</a>
+  <a class="nav-wa" data-cta="whatsapp" href="#" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+  </a>
+  <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+  <span class="nav-progress" aria-hidden="true"></span>
+</header>
+
+<!-- Mobile menu sheet -->
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <nav aria-label="Mobile">
+    <a href="#choma">Nyama Choma</a>
+    <a href="#menu">Menu</a>
+    <a href="#games">Live Games</a>
+    <a href="#bar">The Bar</a>
+    <a href="#cocktails">Cocktails</a>
+    <a href="#events">Theme Nights</a>
+    <a href="#services">Car Wash · Catering · Delivery</a>
+    <a href="#visit">Find Us</a>
+  </nav>
+  <div class="mm-cta">
+    <a class="btn btn-gold" data-cta="book" href="#">Book a Table</a>
+    <a class="btn btn-light" data-cta="delivery" href="#">Delivery</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Welcome">
+    <div class="hero-panel">
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-poster" src="assets/img/photos/hero-platter-poster.webp" alt="" width="544" height="860" fetchpriority="high">
+        <video class="hero-video" muted loop playsinline preload="none"
+          data-mp4="assets/video/hero-platter-portrait.mp4" data-mp4-wide="assets/video/hero-platter-portrait.mp4"></video>
+      </div>
+      <div class="hero-inner">
+        <img class="hero-logo" src="assets/img/brand/logo-gold.webp" alt="La Baita Lounge" width="420" height="480">
+        <div class="hero-copy">
+          <p class="kicker">Upper Hill Road · Nairobi</p>
+          <h1 class="hero-title"><span>Nyama Choma.</span> <span>Cocktails.</span> <span class="gold">Live Games.</span></h1>
+          <p class="hero-lede">Pick your cut at the butchery and we put it on the grill. Then stay for the drinks, the game and the band.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" data-cta="book" href="#">Book a Table</a>
+            <a class="btn btn-light" data-cta="order" href="#">Order Online</a>
+            <a class="btn btn-wa" data-cta="whatsapp" href="#">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <ul class="hero-facts">
+        <li><b>4.3★</b> 1,200+ reviews</li>
+        <li><b>Big screens</b> every game</li>
+        <li><b>Cashless</b> M-Pesa &amp; cards</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="tick tick-dark" aria-hidden="true"><div class="tick-track"><span>Nyama Choma</span><span>Live Games</span><span>Cocktails</span><span>Car Wash</span><span>Delivery</span><span>Upper Hill</span></div></div>
+
+  <!-- BUTCHERY TO TABLE -->
+  <section class="choma doodle" id="choma" aria-labelledby="choma-title">
+    <div class="choma-pin">
+      <div class="wrap choma-grid">
+        <div class="choma-copy">
+          <p class="kicker">Butchery · Grill · Table</p>
+          <h2 id="choma-title" class="display">From the butchery<br>to your table</h2>
+          <ol class="steps">
+            <li class="step is-on">
+              <span class="step-no">01</span>
+              <div><h3>Pick your cut</h3><p>Choose your goat or beef at our butchery counter, weighed by the kilo.</p></div>
+              <img class="step-img-sm" src="assets/img/photos/step-butchery-480.webp" alt="Fresh cuts hanging at the butchery" width="480" height="600" loading="lazy">
+            </li>
+            <li class="step">
+              <span class="step-no">02</span>
+              <div><h3>Onto the grill</h3><p>Salted and slow-roasted on the grill while you settle in with a drink.</p></div>
+              <img class="step-img-sm" src="assets/img/photos/step-grill-480.webp" alt="Meat roasting on the grill" width="480" height="600" loading="lazy">
+            </li>
+            <li class="step">
+              <span class="step-no">03</span>
+              <div><h3>To your table</h3><p>Chopped on the board with ugali, kachumbari and chilli. Ask for the goat ribs.</p></div>
+              <img class="step-img-sm" src="assets/img/photos/step-served-480.webp" alt="Roasted ribs served on a board" width="480" height="600" loading="lazy">
+            </li>
+          </ol>
+          <a class="btn btn-dark" data-cta="order" href="#">Order Choma</a>
+        </div>
+        <div class="choma-frame" aria-hidden="true">
+          <img class="frame-img is-on" src="assets/img/photos/step-butchery.webp" alt="" width="800" height="1000" loading="lazy">
+          <img class="frame-img" src="assets/img/photos/step-grill.webp" alt="" width="800" height="1000" loading="lazy">
+          <img class="frame-img" src="assets/img/photos/step-served.webp" alt="" width="800" height="1000" loading="lazy">
+          <div class="frame-progress"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tick tick-gold tick-rev" aria-hidden="true"><div class="tick-track"><span>Off the grill</span><span>Kitchen mains</span><span>Breakfast</span><span>Bites &amp; sides</span><span>Open the menu</span></div></div>
+
+  <!-- MENU: scroll-driven card deck -->
+  <section class="menu doodle" id="menu" aria-labelledby="menu-title">
+    <div class="menu-pin">
+      <div class="wrap menu-grid">
+        <div class="menu-copy">
+          <p class="kicker">What's cooking</p>
+          <h2 id="menu-title" class="display">The Menu</h2>
+          <p class="menu-lede">Four kitchens, one table. Keep scrolling to deal the next card, or tap one to open that part of the menu.</p>
+          <div class="deck-count" aria-hidden="true"><b id="deckNo">01</b> / 04</div>
+          <a class="btn btn-dark menu-full" data-cta="menu" href="#">Open the full menu</a>
+        </div>
+        <div class="deck" id="deck">
+          <a class="card" data-menu-cat="choma" href="#" style="--i:0">
+            <img src="assets/img/menu/slide-grill.webp" alt="Beef and goat roasting on the grill" width="640" height="800" loading="lazy">
+            <div class="card-body"><span class="card-no">01</span><h3>Off the Grill</h3><p>Nyama choma by the kilo, kuku and goat ribs.</p><span class="card-cta">Open menu →</span></div>
+          </a>
+          <a class="card" data-menu-cat="main-course" href="#" style="--i:1">
+            <img src="assets/img/menu/slide-mains.webp" alt="Grilled chicken skewers with dips" width="640" height="800" loading="lazy">
+            <div class="card-body"><span class="card-no">02</span><h3>Kitchen Mains</h3><p>Stews, fry, soups and home-style plates.</p><span class="card-cta">Open menu →</span></div>
+          </a>
+          <a class="card" data-menu-cat="breakfast" href="#" style="--i:2">
+            <img src="assets/img/menu/slide-breakfast.webp" alt="Fresh chapati on a hot pan" width="640" height="800" loading="lazy">
+            <div class="card-body"><span class="card-no">03</span><h3>Breakfast</h3><p>Chapati, eggs your way, sausages and chai.</p><span class="card-cta">Open menu →</span></div>
+          </a>
+          <a class="card" data-menu-cat="snacks" href="#" style="--i:3">
+            <img src="assets/img/menu/slide-bites.webp" alt="Golden samosas with green chilli" width="640" height="800" loading="lazy">
+            <div class="card-body"><span class="card-no">04</span><h3>Bites &amp; Sides</h3><p>Samosas, fries, ugali and kachumbari.</p><span class="card-cta">Open menu →</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tick tick-dark" aria-hidden="true"><div class="tick-track"><span>Big screens</span><span>Premier League</span><span>Watch parties</span><span>Sound on</span><span>Every game live</span></div></div>
+
+  <!-- LIVE GAMES -->
+  <section class="games" id="games" aria-labelledby="games-title">
+    <img class="games-bg" src="assets/img/photos/game-screen.webp" srcset="assets/img/photos/game-screen-800.webp 800w, assets/img/photos/game-screen.webp 1600w" sizes="100vw" alt="" width="1600" height="1000" loading="lazy">
+    <div class="wrap games-inner">
+      <div class="games-copy">
+        <p class="kicker kicker-gold"><span class="live-dot"></span> Live on the big screen</p>
+        <h2 id="games-title" class="display">Never miss<br>a game</h2>
+        <ul class="games-list">
+          <li><b>Big screens</b> across the lounge and terrace, so every seat has a view.</li>
+          <li><b>Premier League</b> and the biggest football nights live, sound on.</li>
+          <li><b>Watch parties</b> with choma off the grill and buckets on ice.</li>
+        </ul>
+        <div class="games-actions">
+          <a class="btn btn-gold" data-wa="match" href="#">Book a match-day table</a>
+          <a class="text-link text-link-light" href="#events">See watch parties →</a>
+        </div>
+      </div>
+      <a class="games-poster" href="https://www.instagram.com/p/De6T6VQIXYR/" target="_blank" rel="noopener">
+        <img src="assets/img/events/watch-party.webp" alt="La Baita watch party poster: Liverpool vs Brighton and Man Utd vs Bournemouth" width="560" height="700" loading="lazy">
+        <span>This weekend's watch party</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="tick tick-gold" aria-hidden="true"><div class="tick-track"><span>Whisky</span><span>Cognac</span><span>Gin</span><span>Vodka</span><span>Tequila</span><span>Champagne</span></div></div>
+
+  <!-- THE BAR (now above cocktails) -->
+  <section class="bar" id="bar" aria-labelledby="bar-title">
+    <div class="wrap bar-head">
+      <div>
+        <p class="kicker kicker-gold">Fully stocked</p>
+        <h2 id="bar-title" class="display">The Bar</h2>
+        <p class="bar-hint">Tap a bottle label to see what's on the shelf.</p>
+      </div>
+      <a class="btn btn-gold btn-sm" data-cta="delivery" href="#">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v9H3zM14 10h4l3 3v3h-7M7 19a2 2 0 1 0 0-.01M17 19a2 2 0 1 0 0-.01"/></svg>
+        Get drinks delivered
+      </a>
+    </div>
+    <div class="wrap">
+      <div class="shelf" id="shelf">
+        <div class="shelf-inner" id="shelfInner">
+          <img src="assets/img/photos/photo-bar-shelf.webp" srcset="assets/img/photos/photo-bar-shelf-960.webp 960w, assets/img/photos/photo-bar-shelf.webp 1920w" sizes="(max-width: 760px) 720px, 1200px" alt="A classic arched back bar with lit shelves of spirits" width="1920" height="800" loading="lazy">
+          <!-- labels added from config.barShelf -->
+        </div>
+      </div>
+    </div>
+    <div class="shelf-card" id="shelfCard" role="dialog" aria-modal="false" aria-labelledby="shelfCardTitle" hidden>
+      <button class="shelf-close" type="button" aria-label="Close">×</button>
+      <p class="kicker">On the shelf</p>
+      <h3 id="shelfCardTitle"></h3>
+      <p class="shelf-brands"></p>
+      <div class="shelf-actions">
+        <a class="btn btn-dark btn-sm shelf-link" href="#">See prices</a>
+        <a class="btn btn-line-dark btn-sm" data-cta="delivery" href="#">Deliver it</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="tick tick-gold tick-rev" aria-hidden="true"><div class="tick-track"><span>Shaken to order</span><span>Dawa</span><span>Passion Mojito</span><span>Whisky Sour</span><span>In-house mixologist</span></div></div>
+
+  <!-- COCKTAILS: scroll-scrubbed pour + mixologist -->
+  <section class="mix doodle" id="cocktails" aria-labelledby="mix-title">
+    <div class="mix-pin">
+      <div class="wrap mix-grid">
+        <div class="mix-copy">
+          <p class="kicker">By our in-house mixologist</p>
+          <h2 id="mix-title" class="display"><span class="script">Cheers!</span> Cocktails</h2>
+          <ol class="pour-steps" aria-live="polite">
+            <li class="is-on"><b>Ice first.</b> Crystal glass, salted rim, one big cube.</li>
+            <li><b>Pour it slow.</b> Shaken to order by our mixologist.</li>
+            <li><b>Cheers!</b> Hibiscus Sour, one of the house favourites.</li>
+          </ol>
+          <ul class="drink-list">
+            <li>Dawa</li><li>Passion Mojito</li><li>Whisky Sour</li><li>Hibiscus Sour</li><li>Margarita</li>
+          </ul>
+          <a class="link-arrow" data-menu-cat="cocktails" href="#">All cocktails <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="pour-frame">
+          <canvas id="pour" width="540" height="720" aria-label="A cocktail being poured into a glass"></canvas>
+          <img class="pour-fallback" src="assets/img/pour/lg/f063.webp" alt="A red cocktail in a crystal glass" width="540" height="720" loading="lazy">
+          <div class="pour-meter" aria-hidden="true"><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tick tick-dark tick-rev" aria-hidden="true"><div class="tick-track"><span>Ladies Night</span><span>After Work</span><span>Watch Party</span><span>Weekend Nights</span><span>Rhumba Culture</span></div></div>
+
+  <!-- THEME NIGHTS & EVENTS: poster slider -->
+  <section class="events doodle" id="events" aria-labelledby="events-title">
+    <div class="wrap section-head">
+      <div>
+        <p class="kicker">Every week at La Baita</p>
+        <h2 id="events-title" class="display">Theme Nights<br>&amp; Events</h2>
+      </div>
+      <div class="slider-nav">
+        <button class="snav" type="button" data-dir="-1" aria-label="Previous event">←</button>
+        <button class="snav" type="button" data-dir="1" aria-label="Next event">→</button>
+      </div>
+    </div>
+    <div class="ev-track" id="evTrack" tabindex="0" aria-label="Theme nights and events, swipe sideways"><!-- from config.events --></div>
+    <div class="ev-dots" id="evDots" aria-hidden="true"></div>
+  </section>
+
+  <div class="tick tick-gold" aria-hidden="true"><div class="tick-track"><span>Car Wash</span><span>Catering</span><span>Private Mixologist</span><span>Delivery</span></div></div>
+
+  <!-- SERVICES -->
+  <section class="services doodle" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="kicker">More at La Baita</p>
+          <h2 id="services-title" class="display">While you're here</h2>
+        </div>
+        <p class="muted">Tap a card to arrange it on WhatsApp.</p>
+      </div>
+      <div class="svc-grid">
+        <a class="svc" data-wa="carwash" href="#">
+          <img src="assets/img/services/car-wash.webp" alt="A car covered in foam at the car wash" width="720" height="540" loading="lazy">
+          <div><h3>Car Wash</h3><p>Hand wash and vacuum while you eat. Drive in dusty, leave shining.</p><span class="svc-cta">Book a wash →</span></div>
+        </a>
+        <a class="svc" data-wa="catering" href="#">
+          <img src="assets/img/services/catering.webp" alt="A catering buffet with chafing dishes" width="720" height="540" loading="lazy">
+          <div><h3>Catering</h3><p>Choma, mains and drinks for office lunches, parties and weddings.</p><span class="svc-cta">Get a quote →</span></div>
+        </a>
+        <a class="svc" data-wa="mixologist" href="#">
+          <img src="assets/img/services/mixologist.webp" alt="Our mixologist pouring a cocktail at the bar" width="720" height="540" loading="lazy">
+          <div><h3>Hire our Mixologist</h3><p>Our in-house mixologist, at your party or private event.</p><span class="svc-cta">Book the mixologist →</span></div>
+        </a>
+        <a class="svc svc-delivery" data-cta="delivery" href="#">
+          <div class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="40" height="40"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v9H3zM14 10h4l3 3v3h-7M7 19a2 2 0 1 0 0-.01M17 19a2 2 0 1 0 0-.01"/></svg></div>
+          <div><h3>Delivery</h3><p>Food and drinks from La Baita, delivered to your door or office.</p><span class="svc-cta">Order delivery →</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="tick tick-dark tick-rev" aria-hidden="true"><div class="tick-track"><span>Follow the vibe</span><span>@labaitaloungeupperhill</span><span>Reels</span><span>Posters</span><span>Line-ups</span></div></div>
+
+  <!-- SOCIAL: compact grid -->
+  <section class="social doodle" id="social" aria-labelledby="social-title">
+    <div class="wrap">
+      <div class="social-card">
+        <div class="social-top">
+          <img class="social-avatar" src="assets/img/brand/logo-square.jpg" alt="" width="64" height="64" loading="lazy">
+          <div>
+            <h2 id="social-title" class="social-title">Follow the <span class="script">Vibe</span></h2>
+            <a class="social-handle" data-link="instagram" href="#" target="_blank" rel="noopener">@labaitaloungeupperhill</a>
+          </div>
+          <a class="btn btn-dark btn-sm social-follow" data-link="instagram" href="#" target="_blank" rel="noopener">Follow</a>
+        </div>
+        <div class="social-grid" id="socialGrid"><!-- from config.social --></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tick tick-gold" aria-hidden="true"><div class="tick-track"><span>Karibu</span><span>Upper Hill Road</span><span>Free parking</span><span>Cashless</span><span>Open daily</span></div></div>
+
+  <!-- VISIT -->
+  <section class="visit doodle" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div class="proof">
+        <div class="score"><span class="score-num">4.3</span><span class="stars" aria-hidden="true">★★★★★</span><span class="muted">1,200+ Google reviews</span></div>
+        <div class="quotes">
+          <blockquote class="quote is-on"><p>“Nice place for traditional Kenyan food. Get the ugali and nyama choma.”</p><cite>Google review</cite></blockquote>
+          <blockquote class="quote"><p>“Good customer service and a clean space. Came straight from the airport for chapati.”</p><cite>Google review</cite></blockquote>
+          <blockquote class="quote"><p>“A very nice restaurant in Upper Hill.”</p><cite>Google review</cite></blockquote>
+        </div>
+      </div>
+      <div class="visit-grid">
+        <div>
+          <p class="kicker">Find us</p>
+          <h2 id="visit-title" class="display"><span class="script">Karibu</span> Upper Hill</h2>
+          <dl class="info">
+            <div><dt>Address</dt><dd data-text="address">Upper Hill Road, next to UAP · High Point Apartments, Nairobi</dd></div>
+            <div><dt>Hours</dt><dd data-text="hours">Open daily · breakfast till late</dd></div>
+            <div><dt>Bookings &amp; delivery</dt><dd><a data-cta="call" data-text="phoneDisplay" href="#">0704 222 555</a></dd></div>
+            <div><dt>Parking</dt><dd>Free parking, plus a car wash while you dine</dd></div>
+          </dl>
+          <div class="mpesa"><span class="mpesa-badge">M-PESA</span><span>We're <b>100% cashless</b>. Pay with M-Pesa or card.</span></div>
+        </div>
+        <div class="map" id="map"><button class="map-load btn btn-dark" type="button" hidden>Tap to load map</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-row">
+    <img class="foot-logo" src="assets/img/brand/logo-gold.webp" alt="La Baita Lounge" width="420" height="480" loading="lazy">
+    <div class="foot-cols">
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#menu">Menu</a><a href="#games">Live Games</a><a href="#events">Events</a><a href="#services">Services</a>
+      </nav>
+      <nav class="foot-links" aria-label="Social">
+        <a data-link="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a data-link="facebook" href="#" target="_blank" rel="noopener">Facebook</a>
+        <a data-cta="call" href="#">Call us</a>
+        <a data-cta="whatsapp" href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </div>
+  <p class="wrap fine">© <span id="yr">2026</span> La Baita Lounge, Upper Hill, Nairobi. Drink responsibly. Not for sale to persons under 18.</p>
+</footer>
+
+<!-- Mobile action bar -->
+<div class="actionbar" id="actionbar">
+  <a class="ab-logo" href="#top" aria-label="La Baita home"><img src="assets/img/brand/logo-gold-sm.webp" alt="" width="140" height="160"><img class="logo-dark" src="assets/img/brand/logo-black.webp" alt="" width="420" height="480"></a>
+  <a data-cta="book" href="#"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 6h16v14H4zM4 10h16M8 3v4M16 3v4"/></svg>Book</a>
+  <a data-cta="delivery" href="#"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 7h11v9H3zM14 10h4l3 3v3h-7M7 19a2 2 0 1 0 0-.01M17 19a2 2 0 1 0 0-.01"/></svg>Delivery</a>
+  <a class="ab-wa" data-cta="whatsapp" href="#"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>WhatsApp</a>
+  <button class="ab-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span class="ab-burger"><i></i><i></i></span>Menu</button>
+</div>
+
+<!-- Floating WhatsApp button (used by the single-top-bar designs) -->
+<a class="fab-wa" data-cta="whatsapp" href="#" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg></a>
+
+</body>
+</html>

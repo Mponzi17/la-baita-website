@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none" stroke="#fcc022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- La Baita doodles: a repeating tile like a chat background. Colour/opacity is set where it's used. -->
+  <!-- martini glass -->
+  <g transform="translate(22 20) rotate(-12)"><path d="M0 0h34L17 19zM17 19v17M7 36h20"/><circle cx="12" cy="6" r="3"/><path d="M12 6l-6-8"/></g>
+  <!-- beer mug -->
+  <g transform="translate(118 18) rotate(8)"><rect x="0" y="6" width="24" height="30" rx="3"/><path d="M24 13h5a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-5M0 8c2-6 8-6 10-2 2-5 9-5 14 0M7 14v16M14 14v16"/></g>
+  <!-- football -->
+  <g transform="translate(232 26)"><circle cx="17" cy="17" r="17"/><path d="M17 9l7 5-3 8h-8l-3-8zM17 9V0M24 14l9-3M21 22l5 8M13 22l-5 8M10 14l-9-3"/></g>
+  <!-- flame -->
+  <g transform="translate(70 100) rotate(6)"><path d="M14 0c3 9 14 13 12 25a13 13 0 0 1-26 0c0-8 5-11 7-16 2 4 4 6 6 6-2-5-1-10 1-15z"/><path d="M13 22c2 3 5 4 5 8a5 5 0 0 1-10 0c0-3 3-5 5-8z"/></g>
+  <!-- TV / big screen with play -->
+  <g transform="translate(160 96) rotate(-6)"><rect x="0" y="0" width="50" height="32" rx="4"/><path d="M19 9l12 7-12 7zM18 40h14M25 32v8"/></g>
+  <!-- chilli -->
+  <g transform="translate(262 112) rotate(30)"><path d="M4 4c8 2 10 12 18 22 4 5 3 9-1 9C11 35 2 22 0 10 0 6 1 4 4 4z"/><path d="M4 4C3 0 6-3 10-2"/></g>
+  <!-- music notes -->
+  <g transform="translate(18 190) rotate(-8)"><path d="M10 0v24M10 0l16 5v19"/><ellipse cx="6" cy="25" rx="5" ry="4"/><ellipse cx="22" cy="25" rx="5" ry="4"/></g>
+  <!-- fork and knife -->
+  <g transform="translate(104 180) rotate(14)"><path d="M0 0v12a5 5 0 0 0 10 0V0M5 0v40M22 0c6 4 6 16 0 20v20"/></g>
+  <!-- car (car wash) with bubbles -->
+  <g transform="translate(176 196) rotate(-4)"><path d="M0 22v-6l6-2 7-9h20l9 9 6 2v6z"/><circle cx="12" cy="23" r="5"/><circle cx="38" cy="23" r="5"/><circle cx="8" cy="-6" r="3"/><circle cx="17" cy="-12" r="2"/><circle cx="28" cy="-8" r="3.5"/></g>
+  <!-- skewer / mshikaki -->
+  <g transform="translate(262 196) rotate(-38)"><path d="M0 0h52"/><rect x="8" y="-6" width="9" height="12" rx="3"/><rect x="20" y="-6" width="9" height="12" rx="3"/><rect x="32" y="-6" width="9" height="12" rx="3"/></g>
+  <!-- mountains + cabin (logo nod) -->
+  <g transform="translate(36 268)"><path d="M0 26L14 6l8 10 10-16 16 26z"/><path d="M58 26V16l8-7 8 7v10zM63 26v-6h6v6"/></g>
+  <!-- cocktail tumbler with straw -->
+  <g transform="translate(148 262) rotate(10)"><path d="M0 0h26l-3 30H3zM4 12h18M16 0l8-12"/><circle cx="8" cy="20" r="2.5"/></g>
+  <!-- sparkles -->
+  <g transform="translate(240 270)"><path d="M10 0v20M0 10h20M3 3l14 14M17 3L3 17" stroke-width="1.6"/></g>
+  <path d="M96 60l4 4m0-4l-4 4M290 300l4 4m0-4l-4 4M136 150l4 4m0-4l-4 4M300 74h6M303 71v6M70 166h6M73 163v6" stroke-width="1.6"/>
+</svg>
