@@ -6,13 +6,19 @@ Plain HTML, CSS and JavaScript. No build step, no framework, no package install.
 
 ## Run it locally
 
-Open `index.html` in a browser, or serve the folder (needed for the scroll animations to behave exactly like production):
+Clone (or download the ZIP from GitHub and unzip it), then start it from the project folder:
 
-```bash
-npx serve -l 8765 .
-```
+| Device | How to run |
+|---|---|
+| Windows | Double-click `start.bat` |
+| macOS / Linux | `./start.sh` |
+| Anywhere with Node.js | `npm start` |
 
-Then visit http://localhost:8765. An internet connection is needed for GSAP (loaded from cdnjs) and the Google map.
+The site opens at http://localhost:8765. The scripts use Node.js if it is installed, otherwise Python, otherwise they open `index.html` straight from disk (that also works, as long as the whole folder is there).
+
+Pictures and video only load when `index.html` sits next to its `assets/` folder. They will not show if you open the file in GitHub's file viewer, an HTML preview site, or copy `index.html` on its own.
+
+An internet connection is needed for the scroll animations (GSAP from cdnjs) and the Google map.
 
 ## Edit content
 

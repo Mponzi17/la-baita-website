@@ -1,0 +1,8 @@
+{
+  "name": "la-baita-website",
+  "private": true,
+  "description": "La Baita Lounge landing page (static HTML, CSS and JS, no build step)",
+  "scripts": {
+    "start": "npx --yes serve@14.2.4 -l 8765 ."
+  }
+}

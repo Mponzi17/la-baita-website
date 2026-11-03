@@ -4,3 +4,4 @@
 *.png binary
 *.mp4 binary
 *.woff2 binary
+*.bat text eol=crlf
